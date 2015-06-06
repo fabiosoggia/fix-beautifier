@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fix Beautifier</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="hide-admin-messages">
+	<div class="leftside">
+		<h1>Fix Beautifier</h1>
+		<form id="fix-log-form">
+			<textarea placeholder="Paste here your FIX messages." name="fix-log" id="fix-log" cols="30" rows="10"></textarea>
+
+			<label class="field">Messages separator: <input id="messages-separator" type="text" placeholder="\n"></label>
+			<label class="field">Fields separator: <input id="fields-separator" type="text" placeholder="\x01"></label>
+			<label class="field">Tag-Value separator: <input id="tagvalue-separator" type="text" placeholder="="></label>
+
+			<input class="button" type="submit" value="Beautify">
+			<label id="admin-messages-label"><input id="admin-messages-check" type="checkbox" checked="true"> Hide Administrative Messages</label>
+		</form>
+	</div>
+
+	<div id="fix-blocks"></div>
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
